@@ -4,54 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naman Beri | The Artist</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Dancing+Script:wght@400;700&family=Lato:wght@300;400&display=swap"
-        rel="stylesheet">
+    <title>The Artist | Naman Beri</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        /* Artist Theme Overrides */
-        :root {
-            --font-heading: 'Cinzel', serif;
-            --font-body: 'Lato', sans-serif;
+        .artist-hero {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+            padding: 80px 0;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: 50px;
         }
 
-        body {
-            background: var(--artist-bg-gradient);
-        }
-
-        .section-title::after {
-            background: var(--artist-primary);
-        }
-
-        h1,
-        h2,
-        h3 {
-            font-family: 'Cinzel', serif;
-            letter-spacing: 2px;
-        }
-
-        .btn {
-            border-color: var(--artist-primary);
-            color: #fff;
-        }
-
-        .btn:hover {
-            background: var(--artist-primary);
-            box-shadow: 0 0 15px var(--artist-primary);
-            border-color: var(--artist-primary);
-        }
-
-        nav {
-            border-bottom: 1px solid rgba(255, 0, 85, 0.1);
-        }
-
-        .nav-links a:hover {
-            color: var(--artist-primary);
+        .story-card {
+            border-left: 4px solid #ff6b6b;
         }
     </style>
 </head>
@@ -59,36 +25,83 @@
 <body>
 
     <!-- Navigation -->
-    <nav>
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a href="#" class="logo" style="font-family: 'Dancing Script', cursive; font-size: 2rem;">Naman.</a>
-            <ul class="nav-links">
-                <li><a href="#stories">Stories</a></li>
-                <li><a href="#music">Music</a></li>
-                <li><a href="#philosophy">Philosophy</a></li>
-                <li><a href="index.html" class="switch-theme-btn"
-                        style="color: var(--science-primary); border-color: var(--science-primary);">The Scientist <i
-                            class="fas fa-atom"></i></a></li>
-            </ul>
+            <a class="navbar-brand fw-bold" href="index.html">Naman Beri</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="internships.html">Internships</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="management.html">Management</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="artist.html">The Artist</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header id="hero" style="position: relative; overflow: hidden;">
-        <!-- Abstract Background (CSS or JS to be added) -->
-        <div id="artist-bg"
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.3; background: radial-gradient(circle at 50% 50%, #2a0a1a 0%, #000 100%);">
+    <!-- Artist Hero -->
+    <section class="artist-hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-danger">Madness & Hope</h1>
+            <p class="lead">"To create is to destroy the silence."</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Stories -->
+        <h2 class="mb-4 text-center">Stories</h2>
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm story-card">
+                    <div class="card-body">
+                        <h3 class="card-title">The Clockwork Heart</h3>
+                        <p class="card-text fst-italic">"In the silence of the lab, where gears turned and circuits
+                            hummed, he found a rhythm that matched his own..."</p>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm story-card">
+                    <div class="card-body">
+                        <h3 class="card-title">Starlight & Silicon</h3>
+                        <p class="card-text fst-italic">"She looked at the stars, and he looked at the screens. Both
+                            were searching for the same thing..."</p>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Read More</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="hero-content container" style="text-align: center; padding-top: 150px;">
-            <h1 class="fade-in" style="font-size: 4rem; text-shadow: 0 0 20px rgba(255, 0, 85, 0.5);">Madness & Hope
-            </h1>
-            <p class="fade-in"
-                style="animation-delay: 0.2s; font-family: 'Dancing Script', cursive; font-size: 1.5rem; margin-top: 20px;">
-                "To create is to destroy the silence."</p>
-            </footer>
+        <!-- Music -->
+        <h2 class="mb-4 text-center">Music</h2>
+        <div class="text-center mb-5">
+            <p>Exploring the algorithms of emotion through sound.</p>
+            <i class="fas fa-music fa-3x text-danger"></i>
+            <!-- Placeholder for music player or links -->
+        </div>
 
-            <script src="js/main.js"></script>
+        <!-- Hobbies -->
+        <h2 class="mb-4 text-center">Creative Forge</h2>
+        <div class="row text-center">
+            <div class="col-md-6">
+                <i class="fas fa-cube fa-3x text-secondary mb-3"></i>
+                <h4>3D Printing</h4>
+                <p>Bringing digital dreams into physical reality.</p>
+            </div>
+            <div class="col-md-6">
+                <i class="fas fa-pen-nib fa-3x text-secondary mb-3"></i>
+                <h4>Writing</h4>
+                <p>Coding logic for the mind, writing stories for the soul.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -5,717 +5,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naman Beri | The Art of Science</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <!-- Font Awesome for Icons -->
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Page Specific Overrides for Science Theme */
-        body {
-            background: var(--science-bg-gradient);
-        }
-
-        .section-title::after {
-            background: var(--science-primary);
-        }
-
-        a:hover {
-            color: var(--science-primary);
-        }
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav>
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a href="#" class="logo">NB.</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="artist.html" class="switch-theme-btn"
-                        style="color: var(--artist-primary); border-color: var(--artist-primary);">The Artist <i
-                            class="fas fa-arrow-right"></i></a></li>
-            </ul>
+            <a class="navbar-brand fw-bold" href="index.html">Naman Beri</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="internships.html">Internships</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="management.html">Management</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artist.html">The Artist</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header id="hero">
-        <canvas id="hero-canvas"></canvas>
-        <div class="hero-content container">
-            <h1 class="fade-in">The Art of Science</h1>
-            <p class="fade-in" style="animation-delay: 0.2s;">Robotics | Embedded Systems | AI</p>
-            <div class="hero-btns fade-in" style="animation-delay: 0.4s;">
-                <a href="#projects" class="btn">View Work</a>
-                <a href="#contact" class="btn">Get in Touch</a>
+    <section class="hero-section text-center text-white">
+        <div class="container">
+            <img src="assets/images/profile_placeholder.jpg" alt="Naman Beri" class="hero-img mb-4">
+            <h1 class="display-4 fw-bold">The Art of Science</h1>
+            <p class="lead mb-4">Electronics Engineer | Data Scientist | Creative Soul</p>
+            <p class="mx-auto" style="max-width: 700px;">
+                Welcome to my portfolio. Here, I present what is needed—a blend of technical depth and creative
+                expression.
+                From robotics and embedded systems to stories and music, explore the different facets of my journey.
+            </p>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="container mb-5">
+        <h2 class="text-center mb-5">My Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h5>Current Pursuit</h5>
+                <p class="mb-0">Pursuing Dual Degrees: B.Sc. (Hons) Electronics at DU & BS in Data Science at IIT
+                    Madras.</p>
+            </div>
+            <div class="timeline-item">
+                <h5>First Year College</h5>
+                <p class="mb-0">Explored Robotics, joined e-Yantra, and started building 8-bit computers.</p>
+            </div>
+            <div class="timeline-item">
+                <h5>Schooling</h5>
+                <p class="mb-0">Foundation in Science and Mathematics. Developed a passion for how things work.</p>
             </div>
         </div>
-    </header>
+    </section>
 
-    <!-- Main Content -->
-    <main>
-        <!-- About Section -->
-        <section id="about">
-            <div class="container">
-                <h2 class="section-title fade-in">The Scientist</h2>
-                <div class="about-content">
-                    <div class="about-text fade-in">
-                        <p>I am an engineer driven by the convergence of <strong>Robotics, Embedded Systems, and
-                                Artificial Intelligence</strong>. My work explores the intersection of hardware
-                            precision and algorithmic intelligence, aiming to build systems that not only function but
-                            adapt.</p>
-                        <p>From designing <strong>8-bit computers</strong> to deploying <strong>local LLMs</strong> and
-                            coordinating <strong>multi-robot systems</strong>, I believe in a hands-on, iterative
-                            approach to solving complex problems. I prefer minimal working code and tangible results.
-                        </p>
-                        <div class="attributes">
-                            <div class="attr-item"><i class="fas fa-brain"></i> Problem Solver</div>
-                            <div class="attr-item"><i class="fas fa-code-branch"></i> Iterative Learner</div>
-                            <div class="attr-item"><i class="fas fa-moon"></i> Late-Night Coder</div>
-                        </div>
+    <!-- Navigation Cards -->
+    <section class="container mb-5">
+        <h2 class="text-center mb-5">Explore My World</h2>
+        <div class="row g-4">
+            <!-- Projects -->
+            <div class="col-md-4">
+                <div class="card h-100 text-center p-4">
+                    <div class="card-body">
+                        <i class="fas fa-microchip fa-3x text-primary mb-3"></i>
+                        <h3 class="card-title">Projects</h3>
+                        <p class="card-text">Deep dive into my technical projects: Robotics, 8-bit computers, AI, and
+                            IoT.</p>
+                        <a href="projects.html" class="btn btn-outline-primary stretched-link">View Projects</a>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" style="background: rgba(255,255,255,0.02);">
-            <div class="container">
-                <h2 class="section-title fade-in">Technical Arsenal</h2>
-
-                <div class="skills-grid">
-                    <!-- Domain 1: Robotics & Embedded -->
-                    <div class="skill-category fade-in">
-                        <h3><i class="fas fa-robot"></i> Robotics & Embedded</h3>
-                        <ul class="skill-list">
-                            <li>Robotics Design & Kinematics</li>
-                            <li>ROS 2 & Multi-Robot Systems</li>
-                            <li>Arduino, ESP32, AVR, RPi</li>
-                            <li>Sensor Integration & IoT</li>
-                            <li>Acoustic Sensing</li>
-                        </ul>
+            <!-- Internships -->
+            <div class="col-md-4">
+                <div class="card h-100 text-center p-4">
+                    <div class="card-body">
+                        <i class="fas fa-briefcase fa-3x text-success mb-3"></i>
+                        <h3 class="card-title">Internships</h3>
+                        <p class="card-text">My industry experience and professional work history.</p>
+                        <a href="internships.html" class="btn btn-outline-success stretched-link">View Experience</a>
                     </div>
-
-                    <!-- Domain 2: Programming & Systems -->
-                    <div class="skill-category fade-in" style="animation-delay: 0.2s;">
-                        <h3><i class="fas fa-terminal"></i> Core Engineering</h3>
-                        <ul class="skill-list">
-                            <li>C, C++, Python, Java</li>
-                            <li>Bash/Shell & Linux System Prog.</li>
-                            <li>AVR Assembly</li>
-                            <li>Digital/VLSI Circuit Design</li>
-                            <li>Pthreads & Concurrency</li>
-                        </ul>
+                </div>
+            </div>
+            <!-- Education -->
+            <div class="col-md-4">
+                <div class="card h-100 text-center p-4">
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-3x text-info mb-3"></i>
+                        <h3 class="card-title">Education</h3>
+                        <p class="card-text">Details on my dual degrees from Delhi University and IIT Madras.</p>
+                        <a href="education.html" class="btn btn-outline-info stretched-link">View Education</a>
                     </div>
+                </div>
+            </div>
+            <!-- Management -->
+            <div class="col-md-6">
+                <div class="card h-100 text-center p-4">
+                    <div class="card-body">
+                        <i class="fas fa-users-cog fa-3x text-warning mb-3"></i>
+                        <h3 class="card-title">Management Skills</h3>
+                        <p class="card-text">Leadership roles, event management, and organizational skills.</p>
+                        <a href="management.html" class="btn btn-outline-warning stretched-link">View Management</a>
+                    </div>
+                </div>
+            </div>
+            <!-- The Artist -->
+            <div class="col-md-6">
+                <div class="card h-100 text-center p-4">
+                    <div class="card-body">
+                        <i class="fas fa-paint-brush fa-3x text-danger mb-3"></i>
+                        <h3 class="card-title">The Artist</h3>
+                        <p class="card-text">"Madness & Hope" - My stories, music, and creative philosophy.</p>
+                        <a href="artist.html" class="btn btn-outline-danger stretched-link">Enter the Studio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <!-- Domain 3: AI & Data -->
-                    <div class="skill-category fade-in" style="animation-delay: 0.4s;">
-                        <h3><i class="fas fa-network-wired"></i> AI & Data Science</h3>
-                        <ul class="skill-list">
-                            <li>TensorFlow, Scikit-learn, Pandas</li>
-                            <li>Local LLM (Ollama, Open WebUI)</li>
-                            <li>Workflow Automation (n8n)</li>
-                            <li>Computer Vision</li>
-                            <li>Fine-tuning LLMs</li>
-                            <!DOCTYPE html>
-                            <html lang="en">
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2025 Naman Beri. Built with Passion & Bootstrap.</p>
+            <div class="social-links">
+                <a href="#" class="me-3 text-dark"><i class="fab fa-github fa-lg"></i></a>
+                <a href="#" class="me-3 text-dark"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" class="text-dark"><i class="fas fa-envelope fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
 
-                            <head>
-                                <meta charset="UTF-8">
-                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                <title>Naman Beri | The Art of Science</title>
-                                <link rel="stylesheet" href="css/style.css">
-                                <!-- Google Fonts -->
-                                <link rel="preconnect" href="https://fonts.googleapis.com">
-                                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                                <link
-                                    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
-                                    rel="stylesheet">
-                                <!-- Font Awesome for Icons -->
-                                <link rel="stylesheet"
-                                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-                                <style>
-                                    /* Page Specific Overrides for Science Theme */
-                                    body {
-                                        background: var(--science-bg-gradient);
-                                    }
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
-                                    .section-title::after {
-                                        background: var(--science-primary);
-                                    }
-
-                                    a:hover {
-                                        color: var(--science-primary);
-                                    }
-                                </style>
-                            </head>
-
-                            <body>
-
-                                <!-- Navigation -->
-                                <nav>
-                                    <div class="container">
-                                        <a href="#" class="logo">NB.</a>
-                                        <ul class="nav-links">
-                                            <li><a href="#about">About</a></li>
-                                            <li><a href="#skills">Skills</a></li>
-                                            <li><a href="#projects">Projects</a></li>
-                                            <li><a href="#experience">Experience</a></li>
-                                            <li><a href="#contact">Contact</a></li>
-                                            <li><a href="artist.html" class="switch-theme-btn"
-                                                    style="color: var(--artist-primary); border-color: var(--artist-primary);">The
-                                                    Artist <i class="fas fa-arrow-right"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
-
-                                <!-- Hero Section -->
-                                <header id="hero">
-                                    <canvas id="hero-canvas"></canvas>
-                                    <div class="hero-content container">
-                                        <h1 class="fade-in">The Art of Science</h1>
-                                        <p class="fade-in" style="animation-delay: 0.2s;">Robotics | Embedded Systems |
-                                            AI</p>
-                                        <div class="hero-btns fade-in" style="animation-delay: 0.4s;">
-                                            <a href="#projects" class="btn">View Work</a>
-                                            <a href="#contact" class="btn">Get in Touch</a>
-                                        </div>
-                                    </div>
-                                </header>
-
-                                <!-- Main Content -->
-                                <main>
-                                    <!-- About Section -->
-                                    <section id="about">
-                                        <div class="container">
-                                            <h2 class="section-title fade-in">The Scientist</h2>
-                                            <div class="about-content">
-                                                <div class="about-text fade-in">
-                                                    <p>I am an engineer driven by the convergence of <strong>Robotics,
-                                                            Embedded Systems, and
-                                                            Artificial Intelligence</strong>. My work explores the
-                                                        intersection of hardware
-                                                        precision and algorithmic intelligence, aiming to build systems
-                                                        that not only function but
-                                                        adapt.</p>
-                                                    <p>From designing <strong>8-bit computers</strong> to deploying
-                                                        <strong>local LLMs</strong> and
-                                                        coordinating <strong>multi-robot systems</strong>, I believe in
-                                                        a hands-on, iterative
-                                                        approach to solving complex problems. I prefer minimal working
-                                                        code and tangible results.
-                                                    </p>
-                                                    <div class="attributes">
-                                                        <div class="attr-item"><i class="fas fa-brain"></i> Problem
-                                                            Solver</div>
-                                                        <div class="attr-item"><i class="fas fa-code-branch"></i>
-                                                            Iterative Learner</div>
-                                                        <div class="attr-item"><i class="fas fa-moon"></i> Late-Night
-                                                            Coder</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-
-                                    <!-- Skills Section -->
-                                    <section id="skills" style="background: rgba(255,255,255,0.02);">
-                                        <div class="container">
-                                            <h2 class="section-title fade-in">Technical Arsenal</h2>
-
-                                            <div class="skills-grid">
-                                                <!-- Domain 1: Robotics & Embedded -->
-                                                <div class="skill-category fade-in">
-                                                    <h3><i class="fas fa-robot"></i> Robotics & Embedded</h3>
-                                                    <ul class="skill-list">
-                                                        <li>Robotics Design & Kinematics</li>
-                                                        <li>ROS 2 & Multi-Robot Systems</li>
-                                                        <li>Arduino, ESP32, AVR, RPi</li>
-                                                        <li>Sensor Integration & IoT</li>
-                                                        <li>Acoustic Sensing</li>
-                                                    </ul>
-                                                </div>
-
-                                                <!-- Domain 2: Programming & Systems -->
-                                                <div class="skill-category fade-in" style="animation-delay: 0.2s;">
-                                                    <h3><i class="fas fa-terminal"></i> Core Engineering</h3>
-                                                    <ul class="skill-list">
-                                                        <li>C, C++, Python, Java</li>
-                                                        <li>Bash/Shell & Linux System Prog.</li>
-                                                        <li>AVR Assembly</li>
-                                                        <li>Digital/VLSI Circuit Design</li>
-                                                        <li>Pthreads & Concurrency</li>
-                                                    </ul>
-                                                </div>
-
-                                                <!-- Domain 3: AI & Data -->
-                                                <div class="skill-category fade-in" style="animation-delay: 0.4s;">
-                                                    <h3><i class="fas fa-network-wired"></i> AI & Data Science</h3>
-                                                    <ul class="skill-list">
-                                                        <li>TensorFlow, Scikit-learn, Pandas</li>
-                                                        <li>Local LLM (Ollama, Open WebUI)</li>
-                                                        <li>Workflow Automation (n8n)</li>
-                                                        <li>Computer Vision</li>
-                                                        <li>Fine-tuning LLMs</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-
-                                    <!-- Projects Section -->
-                                    <section id="projects">
-                                        <div class="container">
-                                            <h2 class="section-title fade-in">The Lab</h2>
-
-                                            <!-- Filter Buttons -->
-                                            <div class="project-filters fade-in">
-                                                <button class="filter-btn active" data-filter="all">All</button>
-                                                <button class="filter-btn" data-filter="robotics">Robotics</button>
-                                                <button class="filter-btn" data-filter="ai">AI & ML</button>
-                                                <button class="filter-btn" data-filter="iot">IoT & Embedded</button>
-                                            </div>
-
-                                            <div class="projects-grid">
-                                                <!-- Project 1: DRDO -->
-                                                <div class="project-card fade-in" data-category="ai">
-                                                    <div class="project-img">
-                                                        <!-- Placeholder for user image -->
-                                                        <div class="img-placeholder"><i class="fas fa-shield-alt"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="project-info">
-                                                        <span class="project-cat">AI / ML</span>
-                                                        <h3>Intruder Detection Dashboard</h3>
-                                                        <p>Developed an ML-based dashboard for intruder detection using
-                                                            AE technology at DRDO SSPL.</p>
-                                                        <div class="project-tech">
-                                                            <span>Python</span><span>TensorFlow</span><span>Dashboard</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Project 2: 8-Bit Computer -->
-                                                <div class="project-card fade-in" data-category="iot">
-                                                    <div class="project-img">
-                                                        <div class="img-placeholder"><i class="fas fa-microchip"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="project-info">
-                                                        <span class="project-cat">Embedded Systems</span>
-                                                        <h3>8-Bit Computer</h3>
-                                                        <p>Built a computer from scratch using logic gates and
-                                                            integrated circuits. ELITE Summer Fellowship.</p>
-                                                        <div class="project-tech">
-                                                            <span>Digital
-                                                                Logic</span><span>Electronics</span><span>Assembly</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Project 3: Sensor Bank -->
-                                                <div class="project-card fade-in" data-category="iot ai">
-                                                    <div class="project-img">
-                                                        <div class="img-placeholder"><i class="fas fa-wifi"></i></div>
-                                                    </div>
-                                                    <div class="project-info">
-                                                        <span class="project-cat">IoT & AI</span>
-                                                        <h3>Sensor Bank System</h3>
-                                                        <p>Real-time Machine Learning based Electronic Sensor Management
-                                                            System. Presented at Int. Conference.</p>
-                                                        <div class="project-tech">
-                                                            <span>IoT</span><span>ML</span><span>Sensors</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Project 4: Holonomic Battalion -->
-                                                <div class="project-card fade-in" data-category="robotics">
-                                                    <div class="project-img">
-                                                        <div class="img-placeholder"><i class="fas fa-robot"></i></div>
-                                                    </div>
-                                                    <div class="project-info">
-                                                        <span class="project-cat">Robotics</span>
-                                                        <h3>Holonomic Battalion</h3>
-                                                        <p>e-Yantra Robotics Competition team project focusing on
-                                                            holonomic drive and control.</p>
-                                                        <div class="project-tech">
-                                                            <span>ROS
-                                                                2</span><span>Kinematics</span><span>Control</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Project 5: Acoustic Levitation -->
-                                                <div class="project-card fade-in" data-category="iot">
-                                                    <div class="project-img">
-                                                        <div class="img-placeholder"><i class="fas fa-wave-square"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="project-info">
-                                                        <span class="project-cat">Research</span>
-                                                        <h3>Acoustic Levitation</h3>
-                                                        <p>Research project exploring acoustic sensing and signal
-                                                            processing for object levitation.</p>
-                                                        <div class="project-tech">
-                                                            <span>Physics</span><span>Signal Processing</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                </nav>
-
-                                                <!-- Hero Section -->
-                                                <header id="hero">
-                                                    <canvas id="hero-canvas"></canvas>
-                                                    <div class="hero-content container">
-                                                        <h1 class="fade-in">The Art of Science</h1>
-                                                        <p class="fade-in" style="animation-delay: 0.2s;">Robotics |
-                                                            Embedded Systems |
-                                                            AI</p>
-                                                        <div class="hero-btns fade-in" style="animation-delay: 0.4s;">
-                                                            <a href="#projects" class="btn">View Work</a>
-                                                            <a href="#contact" class="btn">Get in Touch</a>
-                                                        </div>
-                                                    </div>
-                                                </header>
-
-                                                <!-- Main Content -->
-                                                <main>
-                                                    <!-- About Section -->
-                                                    <section id="about">
-                                                        <div class="container">
-                                                            <h2 class="section-title fade-in">The Scientist</h2>
-                                                            <div class="about-content">
-                                                                <div class="about-text fade-in">
-                                                                    <p>I am an engineer driven by the convergence of
-                                                                        <strong>Robotics,
-                                                                            Embedded Systems, and
-                                                                            Artificial Intelligence</strong>. My work
-                                                                        explores the
-                                                                        intersection of hardware
-                                                                        precision and algorithmic intelligence, aiming
-                                                                        to build systems
-                                                                        that not only function but
-                                                                        adapt.</p>
-                                                                    <p>From designing <strong>8-bit computers</strong>
-                                                                        to deploying
-                                                                        <strong>local LLMs</strong> and
-                                                                        coordinating <strong>multi-robot
-                                                                            systems</strong>, I believe in
-                                                                        a hands-on, iterative
-                                                                        approach to solving complex problems. I prefer
-                                                                        minimal working
-                                                                        code and tangible results.
-                                                                    </p>
-                                                                    <div class="attributes">
-                                                                        <div class="attr-item"><i
-                                                                                class="fas fa-brain"></i> Problem
-                                                                            Solver</div>
-                                                                        <div class="attr-item"><i
-                                                                                class="fas fa-code-branch"></i>
-                                                                            Iterative Learner</div>
-                                                                        <div class="attr-item"><i
-                                                                                class="fas fa-moon"></i> Late-Night
-                                                                            Coder</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </section>
-
-                                                    <!-- Skills Section -->
-                                                    <section id="skills" style="background: rgba(255,255,255,0.02);">
-                                                        <div class="container">
-                                                            <h2 class="section-title fade-in">Technical Arsenal</h2>
-
-                                                            <div class="skills-grid">
-                                                                <!-- Domain 1: Robotics & Embedded -->
-                                                                <div class="skill-category fade-in">
-                                                                    <h3><i class="fas fa-robot"></i> Robotics & Embedded
-                                                                    </h3>
-                                                                    <ul class="skill-list">
-                                                                        <li>Robotics Design & Kinematics</li>
-                                                                        <li>ROS 2 & Multi-Robot Systems</li>
-                                                                        <li>Arduino, ESP32, AVR, RPi</li>
-                                                                        <li>Sensor Integration & IoT</li>
-                                                                        <li>Acoustic Sensing</li>
-                                                                    </ul>
-                                                                </div>
-
-                                                                <!-- Domain 2: Programming & Systems -->
-                                                                <div class="skill-category fade-in"
-                                                                    style="animation-delay: 0.2s;">
-                                                                    <h3><i class="fas fa-terminal"></i> Core Engineering
-                                                                    </h3>
-                                                                    <ul class="skill-list">
-                                                                        <li>C, C++, Python, Java</li>
-                                                                        <li>Bash/Shell & Linux System Prog.</li>
-                                                                        <li>AVR Assembly</li>
-                                                                        <li>Digital/VLSI Circuit Design</li>
-                                                                        <li>Pthreads & Concurrency</li>
-                                                                    </ul>
-                                                                </div>
-
-                                                                <!-- Domain 3: AI & Data -->
-                                                                <div class="skill-category fade-in"
-                                                                    style="animation-delay: 0.4s;">
-                                                                    <h3><i class="fas fa-network-wired"></i> AI & Data
-                                                                        Science</h3>
-                                                                    <ul class="skill-list">
-                                                                        <li>TensorFlow, Scikit-learn, Pandas</li>
-                                                                        <li>Local LLM (Ollama, Open WebUI)</li>
-                                                                        <li>Workflow Automation (n8n)</li>
-                                                                        <li>Computer Vision</li>
-                                                                        <li>Fine-tuning LLMs</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </section>
-
-                                                    <!-- Projects Section -->
-                                                    <section id="projects">
-                                                        <div class="container">
-                                                            <h2 class="section-title fade-in">The Lab</h2>
-
-                                                            <!-- Filter Buttons -->
-                                                            <div class="project-filters fade-in">
-                                                                <button class="filter-btn active"
-                                                                    data-filter="all">All</button>
-                                                                <button class="filter-btn"
-                                                                    data-filter="robotics">Robotics</button>
-                                                                <button class="filter-btn" data-filter="ai">AI &
-                                                                    ML</button>
-                                                                <button class="filter-btn" data-filter="iot">IoT &
-                                                                    Embedded</button>
-                                                            </div>
-
-                                                            <div class="projects-grid">
-                                                                <!-- Project 1: DRDO -->
-                                                                <div class="project-card fade-in" data-category="ai">
-                                                                    <div class="project-img">
-                                                                        <!-- Placeholder for user image -->
-                                                                        <div class="img-placeholder"><i
-                                                                                class="fas fa-shield-alt"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="project-info">
-                                                                        <span class="project-cat">AI / ML</span>
-                                                                        <h3>Intruder Detection Dashboard</h3>
-                                                                        <p>Developed an ML-based dashboard for intruder
-                                                                            detection using
-                                                                            AE technology at DRDO SSPL.</p>
-                                                                        <div class="project-tech">
-                                                                            <span>Python</span><span>TensorFlow</span><span>Dashboard</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <!-- Project 2: 8-Bit Computer -->
-                                                                <div class="project-card fade-in" data-category="iot">
-                                                                    <div class="project-img">
-                                                                        <div class="img-placeholder"><i
-                                                                                class="fas fa-microchip"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="project-info">
-                                                                        <span class="project-cat">Embedded
-                                                                            Systems</span>
-                                                                        <h3>8-Bit Computer</h3>
-                                                                        <p>Built a computer from scratch using logic
-                                                                            gates and
-                                                                            integrated circuits. ELITE Summer
-                                                                            Fellowship.</p>
-                                                                        <div class="project-tech">
-                                                                            <span>Digital
-                                                                                Logic</span><span>Electronics</span><span>Assembly</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <!-- Project 3: Sensor Bank -->
-                                                                <div class="project-card fade-in"
-                                                                    data-category="iot ai">
-                                                                    <div class="project-img">
-                                                                        <div class="img-placeholder"><i
-                                                                                class="fas fa-wifi"></i></div>
-                                                                    </div>
-                                                                    <div class="project-info">
-                                                                        <span class="project-cat">IoT & AI</span>
-                                                                        <h3>Sensor Bank System</h3>
-                                                                        <p>Real-time Machine Learning based Electronic
-                                                                            Sensor Management
-                                                                            System. Presented at Int. Conference.</p>
-                                                                        <div class="project-tech">
-                                                                            <span>IoT</span><span>ML</span><span>Sensors</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <!-- Project 4: Holonomic Battalion -->
-                                                                <div class="project-card fade-in"
-                                                                    data-category="robotics">
-                                                                    <div class="project-img">
-                                                                        <div class="img-placeholder"><i
-                                                                                class="fas fa-robot"></i></div>
-                                                                    </div>
-                                                                    <div class="project-info">
-                                                                        <span class="project-cat">Robotics</span>
-                                                                        <h3>Holonomic Battalion</h3>
-                                                                        <p>e-Yantra Robotics Competition team project
-                                                                            focusing on
-                                                                            holonomic drive and control.</p>
-                                                                        <div class="project-tech">
-                                                                            <span>ROS
-                                                                                2</span><span>Kinematics</span><span>Control</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <!-- Project 5: Acoustic Levitation -->
-                                                                <div class="project-card fade-in" data-category="iot">
-                                                                    <div class="project-img">
-                                                                        <div class="img-placeholder"><i
-                                                                                class="fas fa-wave-square"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="project-info">
-                                                                        <span class="project-cat">Research</span>
-                                                                        <h3>Acoustic Levitation</h3>
-                                                                        <p>Research project exploring acoustic sensing
-                                                                            and signal
-                                                                            processing for object levitation.</p>
-                                                                        <div class="project-tech">
-                                                                            <span>Physics</span><span>Signal
-                                                                                Processing</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </section>
-
-                                                    <!-- Experience Section -->
-                                                    <section id="experience"
-                                                        style="background: rgba(255,255,255,0.02);">
-                                                        <div class="container">
-                                                            <h2 class="section-title fade-in">Journey & Milestones</h2>
-
-                                                            <div class="timeline">
-                                                                <!-- Item 1 -->
-                                                                <div class="timeline-item fade-in">
-                                                                    <div class="timeline-date">Summer 2025</div>
-                                                                    <div class="timeline-content">
-                                                                        <h3>DRDO SSPL Internship</h3>
-                                                                        <h4>Solid State Physics Laboratory, Delhi</h4>
-                                                                        <p>Developed an ML-Based Dashboard for Intruder
-                                                                            Detection using AE Technology. Gained
-                                                                            hands-on experience with defense-grade
-                                                                            security systems.</p>
-                                                                    </div>
-                                                                </div>
-
-                                                                <!-- Item 2 -->
-                                                                <div class="timeline-item fade-in">
-                                                                    <div class="timeline-date">2024</div>
-                                                                    <div class="timeline-content">
-                                                                        <h3>ELITE Summer Fellowship</h3>
-                                                                        <h4>Acharya Narendra Dev College, DU</h4>
-                                                                        <p>Project: "From Logic Gates to Computing".
-                                                                            Built an 8-Bit Computer from scratch using
-                                                                            integrated circuits, bridging the gap
-                                                                            between hardware and software.</p>
-                                                                    </div>
-                                                                </div>
-
-                                                                <!-- Item 3 -->
-                                                                <div class="timeline-item fade-in">
-                                                                    <div class="timeline-date">2023 - Present</div>
-                                                                    <div class="timeline-content">
-                                                                        <h3>B.Sc. (Hons) Electronics</h3>
-                                                                        <h4>Acharya Narendra Dev College, University of
-                                                                            Delhi</h4>
-                                                                        <p>Focusing on Embedded Systems, Robotics, and
-                                                                            Physics. Recipient of Abhinav Halen
-                                                                            Scholarship (2023-25).</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <!-- Awards Grid -->
-                                                            <h3 class="section-subtitle fade-in"
-                                                                style="text-align: center; margin: 60px 0 40px; color: var(--science-secondary);">
-                                                                Honors & Recognitions</h3>
-
-                                                            <div class="awards-grid">
-                                                                <div class="award-card fade-in">
-                                                                    <i class="fas fa-trophy"></i>
-                                                                    <h4>Electromania '23 Hackathon</h4>
-                                                                    <p>2nd Prize Winner</p>
-                                                                    <span>Shaheed Rajguru College, DU</span>
-                                                                </div>
-                                                                <div class="award-card fade-in">
-                                                                    <i class="fas fa-award"></i>
-                                                                    <h4>IoTronics Competition</h4>
-                                                                    <p>3rd Position & Finalist</p>
-                                                                    <span>Deen Dayal Upadhyaya College, DU</span>
-                                                                </div>
-                                                                <div class="award-card fade-in">
-                                                                    <i class="fas fa-scroll"></i>
-                                                                    <h4>Abhinav Halen Scholarship</h4>
-                                                                    <p>Academic Excellence (2023-25)</p>
-                                                                    <span>University of Delhi</span>
-                                                                </div>
-                                                                <div class="award-card fade-in">
-                                                                    <i class="fas fa-microphone-alt"></i>
-                                                                    <h4>Paper Presentation</h4>
-                                                                    <p>1st Position (IAPT Regional)</p>
-                                                                    <span>Amity International School</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </section>
-
-                                                    <!-- Contact Section -->
-                                                    <section id="contact">
-                                                        <div class="container">
-                                                            <h2 class="section-title fade-in">Initialize Connection</h2>
-                                                            <div class="contact-content fade-in">
-                                                                <p>Ready to collaborate on the next breakthrough in
-                                                                    Robotics or AI?</p>
-                                                                <a href="mailto:berinaman@gmail.com" class="btn">Send
-                                                                    Transmission</a>
-
-                                                                <div class="social-links">
-                                                                    <a href="#" target="_blank"><i
-                                                                            class="fab fa-github"></i></a>
-                                                                    <a href="#" target="_blank"><i
-                                                                            class="fab fa-linkedin"></i></a>
-                                                                    <a href="#" target="_blank"><i
-                                                                            class="fab fa-twitter"></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </section>
-                                                    <footer>
-                                                        <div class="container"
-                                                            style="text-align: center; padding: 20px;">
-                                                            <p>&copy; 2025 Naman Beri. Built with Logic & Code.</p>
-                                                        </div>
-                                                    </footer>
-                                                </main>
-
-                                                <script src="js/main.js"></script>
-                            </body>
-
-                            </html>
+</html>
