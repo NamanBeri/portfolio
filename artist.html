@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naman Beri | The Artist</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Dancing+Script:wght@400;700&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Artist Theme Overrides */
+        :root {
+            --font-heading: 'Cinzel', serif;
+            --font-body: 'Lato', sans-serif;
+        }
+
+        body {
+            background: var(--artist-bg-gradient);
+        }
+
+        .section-title::after {
+            background: var(--artist-primary);
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Cinzel', serif;
+            letter-spacing: 2px;
+        }
+
+        .btn {
+            border-color: var(--artist-primary);
+            color: #fff;
+        }
+
+        .btn:hover {
+            background: var(--artist-primary);
+            box-shadow: 0 0 15px var(--artist-primary);
+            border-color: var(--artist-primary);
+        }
+
+        nav {
+            border-bottom: 1px solid rgba(255, 0, 85, 0.1);
+        }
+
+        .nav-links a:hover {
+            color: var(--artist-primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo" style="font-family: 'Dancing Script', cursive; font-size: 2rem;">Naman.</a>
+            <ul class="nav-links">
+                <li><a href="#stories">Stories</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="index.html" class="switch-theme-btn"
+                        style="color: var(--science-primary); border-color: var(--science-primary);">The Scientist <i
+                            class="fas fa-atom"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" style="position: relative; overflow: hidden;">
+        <!-- Abstract Background (CSS or JS to be added) -->
+        <div id="artist-bg"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.3; background: radial-gradient(circle at 50% 50%, #2a0a1a 0%, #000 100%);">
+        </div>
+
+        <div class="hero-content container" style="text-align: center; padding-top: 150px;">
+            <h1 class="fade-in" style="font-size: 4rem; text-shadow: 0 0 20px rgba(255, 0, 85, 0.5);">Madness & Hope
+            </h1>
+            <p class="fade-in"
+                style="animation-delay: 0.2s; font-family: 'Dancing Script', cursive; font-size: 1.5rem; margin-top: 20px;">
+                "To create is to destroy the silence."</p>
+            </footer>
+
+            <script src="js/main.js"></script>
+</body>
+
+</html>
