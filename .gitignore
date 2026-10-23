@@ -12,6 +12,8 @@ Data - CVResume/
 *.docx
 *.pdf
 Videos/
+*.md
+!README.md
 
 # Backup and draft files
 *.backup
