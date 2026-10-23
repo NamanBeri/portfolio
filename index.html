@@ -4,13 +4,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naman Beri | The Art of Science</title>
+    <title>Naman Beri | Portfolio</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/theme.css">
+    <style>
+        /* Hero Section */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Animated Background Particles */
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image:
+                radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(102, 126, 234, 0.05) 0%, transparent 30%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        /* Hexagonal Profile Image Container */
+        .profile-container {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            margin: 0 auto 2rem;
+            animation: float 6s ease-in-out infinite, fadeInScale 1s ease-out;
+        }
+
+        .hexagon {
+            width: 100%;
+            height: 100%;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 5px;
+            position: relative;
+        }
+
+        .hexagon-inner {
+            width: 100%;
+            height: 100%;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            overflow: hidden;
+        }
+
+        .hexagon-inner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(2deg);
+            }
+        }
+
+        /* Hero Content */
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .hero-name {
+            font-size: 4.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero-roles {
+            font-size: 1.75rem;
+            color: #718096;
+            min-height: 60px;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .typing-cursor::after {
+            content: '|';
+            animation: blink 0.7s infinite;
+            margin-left: 2px;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .hero-tagline {
+            font-size: 1.25rem;
+            color: #a0aec0;
+            font-weight: 400;
+            animation: fadeInUp 0.8s ease-out 0.6s both;
+        }
+
+        /* Navigation Cards */
+        .nav-cards-section {
+            padding: 5rem 0;
+            background: white;
+        }
+
+        .nav-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 2px solid transparent;
+            height: 100%;
+        }
+
+        .nav-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+            border-color: #667eea;
+        }
+
+        .nav-card-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-card:hover .nav-card-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .nav-card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+
+        .nav-card-text {
+            color: #718096;
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .nav-card-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.875rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .nav-card-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-name {
+                font-size: 3rem;
+            }
+
+            .hero-roles {
+                font-size: 1.25rem;
+            }
+
+            .profile-container {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -18,110 +237,156 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Naman Beri</a>
+            <a class="navbar-brand" href="index.html">Naman Beri</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="internships.html">Internships</a></li>
                     <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="management.html">Management</a></li>
-                    </p>
+                    <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artist.html">Whisper of My Heart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="journey.html">Journey</a></li>
+                </ul>
             </div>
-            </section>
+        </div>
+    </nav>
 
-            <!-- Timeline Section -->
-            <section class="container mb-5">
-                <h2 class="text-center mb-5">My Journey</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h5>Current Pursuit</h5>
-                        <p class="mb-0">Pursuing Dual Degrees: B.Sc. (Hons) Electronics at DU & BS in Data Science at
-                            IIT
-                            Madras.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h5>First Year College</h5>
-                        <p class="mb-0">Explored Robotics, joined e-Yantra, and started building 8-bit computers.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h5>Schooling</h5>
-                        <p class="mb-0">Foundation in Science and Mathematics. Developed a passion for how things work.
-                        </p>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Hexagonal Profile Image -->
+                <div class="profile-container">
+                    <div class="hexagon">
+                        <div class="hexagon-inner">
+                            <img src="pics/solo_home_page_pic.jpg" alt="Naman Beri">
+                        </div>
                     </div>
                 </div>
-            </section>
 
-            <!-- Navigation Cards -->
-            <section class="container mb-5">
-                <h2 class="text-center mb-5">Explore My World</h2>
+                <!-- Name -->
                 <div class="row g-4">
                     <!-- Projects -->
                     <div class="col-md-4">
-                        <div class="card h-100 text-center p-4">
-                            <div class="card-body">
-                                <i class="fas fa-microchip fa-3x text-primary mb-3"></i>
-                                <h3 class="card-title">Projects</h3>
-                                <p class="card-text">Deep dive into my technical projects: Robotics, 8-bit computers,
-                                    AI, and
-                                    IoT.</p>
-                                <a href="projects.html" class="btn btn-outline-primary stretched-link">View Projects</a>
-                            </div>
+                        <div class="nav-card">
+                            <i class="fas fa-microchip nav-card-icon"></i>
+                            <h3 class="nav-card-title">Projects</h3>
+                            <p class="nav-card-text">Deep dive into my technical projects: Robotics, 8-bit computers,
+                                AI,
+                                and IoT.</p>
+                            <a href="projects.html" class="nav-card-btn">View Projects</a>
                         </div>
                     </div>
+
                     <!-- Internships -->
                     <div class="col-md-4">
-                        <div class="card h-100 text-center p-4">
-                            <div class="card-body">
-                                <i class="fas fa-briefcase fa-3x text-success mb-3"></i>
-                                <h3 class="card-title">Internships</h3>
-                                <p class="card-text">My industry experience and professional work history.</p>
-                                <a href="internships.html" class="btn btn-outline-success stretched-link">View
-                                    Experience</a>
-                            </div>
+                        <div class="nav-card">
+                            <i class="fas fa-briefcase nav-card-icon"></i>
+                            <h3 class="nav-card-title">Internships</h3>
+                            <p class="nav-card-text">My industry experience and professional work history.</p>
+                            <a href="internships.html" class="nav-card-btn">View Experience</a>
                         </div>
                     </div>
+
                     <!-- Education -->
                     <div class="col-md-4">
-                        <div class="card h-100 text-center p-4">
-                            <div class="card-body">
-                                <i class="fas fa-graduation-cap fa-3x text-info mb-3"></i>
-                                <h3 class="card-title">Education</h3>
-                                <p class="card-text">Details on my dual degrees from Delhi University and IIT Madras.
-                                </p>
-                                <a href="education.html" class="btn btn-outline-info stretched-link">View Education</a>
-                            </div>
+                        <div class="nav-card">
+                            <i class="fas fa-graduation-cap nav-card-icon"></i>
+                            <h3 class="nav-card-title">Education</h3>
+                            <p class="nav-card-text">Details on my dual degrees from Delhi University and IIT Madras.
+                            </p>
+                            <a href="education.html" class="nav-card-btn">View Education</a>
                         </div>
                     </div>
+
                     <!-- Management -->
-                    <div class="col-md-6">
-                        <div class="card h-100 text-center p-4">
-                            <div class="card-body">
-                                <i class="fas fa-users-cog fa-3x text-warning mb-3"></i>
-                                <h3 class="card-title">Management Skills</h3>
-                                <p class="card-text">Leadership roles, event management, and organizational skills.</p>
-                                <a href="management.html" class="btn btn-outline-warning stretched-link">View
-                                    Management</a>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="nav-card">
+                            <i class="fas fa-users-cog nav-card-icon"></i>
+                            <h3 class="nav-card-title">Management</h3>
+                            <p class="nav-card-text">Leadership roles, event management, and organizational skills.</p>
+                            <a href="management.html" class="nav-card-btn">View Management</a>
                         </div>
+                    </div>
 
-                        <!-- Footer -->
-                        <footer class="text-center">
-                            <div class="container">
-                                <p>&copy; 2025 Naman Beri. Built with Passion & Bootstrap.</p>
-                                <div class="social-links">
-                                    <a href="#" class="me-3 text-dark"><i class="fab fa-github fa-lg"></i></a>
-                                    <a href="#" class="me-3 text-dark"><i class="fab fa-linkedin fa-lg"></i></a>
-                                    <a href="#" class="text-dark"><i class="fas fa-envelope fa-lg"></i></a>
-                                </div>
-                            </div>
-                        </footer>
+                    <!-- Achievements -->
+                    <div class="col-md-4">
+                        <div class="nav-card">
+                            <i class="fas fa-trophy nav-card-icon"></i>
+                            <h3 class="nav-card-title">Achievements</h3>
+                            <p class="nav-card-text">Awards, certificates, and recognition for my work.</p>
+                            <a href="achievements.html" class="nav-card-btn">View Achievements</a>
+                        </div>
+                    </div>
 
-                        <!-- Bootstrap JS -->
-                        <script
-                            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                    <!-- Journey -->
+                    <div class="col-md-4">
+                        <div class="nav-card">
+                            <i class="fas fa-road nav-card-icon"></i>
+                            <h3 class="nav-card-title">My Journey</h3>
+                            <p class="nav-card-text">Timeline of my education, achievements, and milestones.</p>
+                            <a href="journey.html" class="nav-card-btn">View Journey</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Typing animation
+        const roles = [
+            "Electronics Engineer",
+            "Data Science Student",
+            "Robotics Enthusiast",
+            "AI Enthusiast",
+            "Artist"
+        ];
+
+        let roleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingSpeed = 100;
+        const deletingSpeed = 50;
+        const pauseTime = 2000;
+
+        function typeRole() {
+            const typingElement = document.getElementById('typingText');
+            const currentRole = roles[roleIndex];
+
+            if (isDeleting) {
+                typingElement.textContent = currentRole.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentRole.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let timeout = isDeleting ? deletingSpeed : typingSpeed;
+
+            if (!isDeleting && charIndex === currentRole.length) {
+                timeout = pauseTime;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+            }
+
+            setTimeout(typeRole, timeout);
+        }
+
+        // Start typing animation
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(typeRole, 500);
+        });
+    </script>
 </body>
 
 </html>

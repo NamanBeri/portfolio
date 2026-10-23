@@ -13,7 +13,7 @@ To make your website truly stand out, please gather the following images. You ca
     *   **8-Bit Computer:** A close-up of your breadboard computer or a retro computing image.
     *   **Levitation:** An image of acoustic levitation or sound waves.
 
-## 2. The Artist (Creative Page)
+## 2. Whisper of My Heart (Creative Page)
 *   **Hero Background:** Something chaotic but beautiful.
     *   *Keywords:* Ink in water, galaxy nebula, abstract expressionism, stormy sky with light.
 *   **Writing/Stories:** An image of a vintage typewriter, a quill, or an open book with glowing text.
