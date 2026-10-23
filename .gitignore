@@ -1,0 +1,21 @@
+# Environment variables & secrets
+.env
+.env.*
+*.env
+*.key
+*.pem
+credentials.json
+secret*
+
+# Private research docs and personal data
+Data - CVResume/
+*.docx
+*.pdf
+Videos/
+
+# Backup and draft files
+*.backup
+*_recovered.html
+*.log
+.DS_Store
+Thumbs.db
