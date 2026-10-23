@@ -80,226 +80,454 @@
             <p class="text-muted lead">A collection of my awards, certifications, and recognitions.</p>
         </div>
 
-        <!-- Awards & Scholarships -->
-        <section class="mb-5">
-            <h3 class="mb-4 border-bottom pb-2"><i class="fas fa-trophy text-warning me-2"></i>Awards & Scholarships
-            </h3>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="certificate-card card h-100 shadow-sm" data-bs-toggle="modal"
-                        data-bs-target="#certModal" data-img="Certificate/20250219_064901.jpg"
-                        data-title="Zaheen Mateen Merit Scholarship 2021-22">
-                        <div class="position-relative">
-                            <img src="Certificate/20250219_064901.jpg" class="certificate-img card-img-top"
-                                alt="Scholarship">
-                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>2021-22</span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Zaheen Mateen Merit Scholarship</h5>
-                            <p class="card-text text-muted small">Class X Academic Excellence</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-5 cert-filter-nav">
+            <button class="btn btn-primary active filter-btn" data-filter="all"><i class="fas fa-th-large me-1"></i>All Certificates</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="major-awards"><i class="fas fa-trophy me-1"></i>Major Awards & Fellowships</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="iitm"><i class="fas fa-graduation-cap me-1"></i>IIT Madras</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="electronics"><i class="fas fa-microchip me-1"></i>Electronics & Technical</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="management"><i class="fas fa-users-cog me-1"></i>Leadership & Management</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="participation"><i class="fas fa-certificate me-1"></i>Conferences & Workshops</button>
+        </div>
 
-        <!-- Internships & Projects -->
-        <section class="mb-5">
-            <h3 class="mb-4 border-bottom pb-2"><i class="fas fa-briefcase text-primary me-2"></i>Internships & Projects
-            </h3>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="certificate-card card h-100 shadow-sm" data-bs-toggle="modal"
-                        data-bs-target="#certModal" data-img="Certificate/20250219_064926.jpg"
-                        data-title="DRDO SSPL Internship">
-                        <div class="position-relative">
-                            <img src="Certificate/20250219_064926.jpg" class="certificate-img card-img-top"
-                                alt="DRDO Internship">
-                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Feb 2025</span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">DRDO SSPL Internship</h5>
-                            <p class="card-text text-muted small">ML-Based Intruder Detection</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="certificate-card card h-100 shadow-sm" data-bs-toggle="modal"
-                        data-bs-target="#certModal" data-img="Certificate/20250924_144333.jpg"
-                        data-title="ELITE Summer Fellowship 2024">
-                        <div class="position-relative">
-                            <img src="Certificate/20250924_144333.jpg" class="certificate-img card-img-top"
-                                alt="ELITE Fellowship">
-                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Summer 2024</span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">ELITE Summer Fellowship 2024</h5>
-                            <p class="card-text text-muted small">8-Bit Computer Project</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Conferences & Presentations -->
-        <section class="mb-5">
-            <h3 class="mb-4 border-bottom pb-2"><i class="fas fa-chalkboard-teacher text-success me-2"></i>Conferences &
-                Presentations</h3>
+        <!-- Major Awards, Honors & Fellowships -->
+        <section class="mb-5 cert-section" data-category="major-awards">
+            <h3 class="mb-4 border-bottom pb-2"><i class="fas fa-trophy text-warning me-2"></i>Major Awards, Honors & Fellowships <span class="badge bg-secondary fs-6 align-middle ms-2">10</span></h3>
             <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="certificate-card card h-100 shadow-sm" data-bs-toggle="modal"
-                        data-bs-target="#certModal" data-img="Certificate/20250924_144414.jpg"
-                        data-title="IoT Conference 2025">
-                        <div class="position-relative">
-                            <img src="Certificate/20250924_144414.jpg" class="certificate-img card-img-top"
-                                alt="IoT Conference">
-                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Sep 2025</span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">International Conference on IoT</h5>
-                            <p class="card-text text-muted small">Paper Presentation - Sensor Bank</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="certificate-card card h-100 shadow-sm" data-bs-toggle="modal"
-                        data-bs-target="#certModal" data-img="Certificate/Photo from NAMAN BERI.jpg"
-                        data-title="ISCB Symposium 2025">
-                        <div class="position-relative">
-                            <img src="Certificate/Photo from NAMAN BERI.jpg" class="certificate-img card-img-top"
-                                alt="ISCB Poster">
-                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Feb 2025</span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">ISCB International Symposium</h5>
-                            <p class="card-text text-muted small">Poster Presentation - ML Environmental</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="certificate-card card h-100 shadow-sm" data-bs-toggle="modal"
-                        data-bs-target="#certModal" data-img="Certificate/20250924_144251.jpg"
-                        data-title="IAPT Convention 2024">
-                        <div class="position-relative">
-                            <img src="Certificate/20250924_144251.jpg" class="certificate-img card-img-top"
-                                alt="IAPT Conference">
-                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Oct 2024</span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">IAPT 38th Annual Convention</h5>
-                            <p class="card-text text-muted small">8-Bit Computer Presentation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="certificate-card card h-100 shadow-sm" data-bs-toggle="modal"
-                        data-bs-target="#certModal" data-img="Certificate/20240913_201650.jpg"
-                        data-title="IAPT Regional - First Position">
-                        <div class="position-relative">
-                            <img src="Certificate/20240913_201650.jpg" class="certificate-img card-img-top"
-                                alt="IAPT First Prize">
-                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Sep 2024</span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">IAPT Regional Convention</h5>
-                            <p class="card-text text-muted small">🏆 First Position - Technical Paper</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="certificate-card card h-100 shadow-sm" data-bs-toggle="modal"
-                        data-bs-target="#certModal" data-img="Certificate/20250219_064944.jpg"
-                        data-title="ISCB Participation">
-                        <div class="position-relative">
-                            <img src="Certificate/20250219_064944.jpg" class="certificate-img card-img-top"
-                                alt="ISCB Participation">
-                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Feb 2025</span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">ISCB Symposium Participation</h5>
-                            <p class="card-text text-muted small">International Symposium on Ciliate Biology</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Competitions & Hackathons -->
-        <section class="mb-5">
-            <h3 class="mb-4 border-bottom pb-2"><i class="fas fa-gamepad text-danger me-2"></i>Competitions & Hackathons
-            </h3>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="certificate-card card h-100 shadow-sm" data-bs-toggle="modal"
-                        data-bs-target="#certModal" data-img="Certificate/Photo from NAMAN BERI(2).jpg"
-                        data-title="Electromania '23 Hackathon">
-                        <div class="position-relative">
-                            <img src="Certificate/Photo from NAMAN BERI(2).jpg" class="certificate-img card-img-top"
-                                alt="Hackathon">
-                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Nov 2023</span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Electromania '23 Hackathon</h5>
-                            <p class="card-text text-muted small">🥈 2nd Prize</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="certificate-card card h-100 shadow-sm" data-bs-toggle="modal"
-                        data-bs-target="#certModal" data-img="Certificate/Photo from NAMAN BERI(1).jpg"
-                        data-title="IoTronics - Certificate of Merit">
-                        <div class="position-relative">
-                            <img src="Certificate/Photo from NAMAN BERI(1).jpg" class="certificate-img card-img-top"
-                                alt="IoTronics Merit">
+                <div class="col-lg-4 col-md-6 cert-item" data-category="major-awards">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Most%20Important/2023-10-16%20-%20Award%203rd%20Position%20-%20DDUC%20IoTronics%20Training%20Program%20on%20IoT%20and%20Competition.jpg" data-pdf="" data-title="DDUC IoTronics Training Program on IoT and Competition">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Most%20Important/2023-10-16%20-%20Award%203rd%20Position%20-%20DDUC%20IoTronics%20Training%20Program%20on%20IoT%20and%20Competition.jpg" class="certificate-img card-img-top" alt="DDUC IoTronics Training Program on IoT and Competition" loading="lazy">
                             <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Oct 2023</span>
+                            
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">IoTronics Training - Merit</h5>
-                            <p class="card-text text-muted small">🥉 Third Position</p>
+                            <span class="badge bg-light text-primary border mb-2">Award 3rd Position</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">DDUC IoTronics Training Program on IoT and Competition</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="certificate-card card h-100 shadow-sm" data-bs-toggle="modal"
-                        data-bs-target="#certModal" data-img="Certificate/20250924_144526.jpg"
-                        data-title="IoTronics - Certificate of Appreciation">
-                        <div class="position-relative">
-                            <img src="Certificate/20250924_144526.jpg" class="certificate-img card-img-top"
-                                alt="IoTronics Appreciation">
-                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Sep 2025</span>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="major-awards">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Most%20Important/2023-11-06%20-%20Award%202nd%20Position%20-%20SRCASW%20Electromania%2023%20Hackathon.jpg" data-pdf="" data-title="SRCASW Electromania 23 Hackathon">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Most%20Important/2023-11-06%20-%20Award%202nd%20Position%20-%20SRCASW%20Electromania%2023%20Hackathon.jpg" class="certificate-img card-img-top" alt="SRCASW Electromania 23 Hackathon" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Nov 2023</span>
+                            
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">IoTronics - Appreciation</h5>
-                            <p class="card-text text-muted small">Qualified for Final Round</p>
+                            <span class="badge bg-light text-primary border mb-2">Award 2nd Position</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">SRCASW Electromania 23 Hackathon</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="major-awards">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Most%20Important/2024-08-31%20-%20Award%201st%20Position%20-%20IAPT%20RC-1%20Convention%20Experiential%20Learning%208-Bit%20Computer.jpg" data-pdf="" data-title="IAPT RC-1 Convention Experiential Learning 8-Bit Computer">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Most%20Important/2024-08-31%20-%20Award%201st%20Position%20-%20IAPT%20RC-1%20Convention%20Experiential%20Learning%208-Bit%20Computer.jpg" class="certificate-img card-img-top" alt="IAPT RC-1 Convention Experiential Learning 8-Bit Computer" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Aug 2024</span>
+                            
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Award 1st Position</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">IAPT RC-1 Convention Experiential Learning 8-Bit Computer</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="major-awards">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Most%20Important/2024-10-18%20-%20Oral%20Presentation%20-%20IAPT%2038th%20Convention%20Experiential%20Learning%208-Bit%20Computer.jpg" data-pdf="" data-title="IAPT 38th Convention Experiential Learning 8-Bit Computer">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Most%20Important/2024-10-18%20-%20Oral%20Presentation%20-%20IAPT%2038th%20Convention%20Experiential%20Learning%208-Bit%20Computer.jpg" class="certificate-img card-img-top" alt="IAPT 38th Convention Experiential Learning 8-Bit Computer" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Oct 2024</span>
+                            
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Oral Presentation</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">IAPT 38th Convention Experiential Learning 8-Bit Computer</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="major-awards">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Most%20Important/2025-04-05%20-%20Paper%20Presentation%20-%20ICAISA%202025%20Sensor%20Bank%20ML%20Sensor%20Management%20System.jpg" data-pdf="" data-title="ICAISA 2025 Sensor Bank ML Sensor Management System">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Most%20Important/2025-04-05%20-%20Paper%20Presentation%20-%20ICAISA%202025%20Sensor%20Bank%20ML%20Sensor%20Management%20System.jpg" class="certificate-img card-img-top" alt="ICAISA 2025 Sensor Bank ML Sensor Management System" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Apr 2025</span>
+                            
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Paper Presentation</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">ICAISA 2025 Sensor Bank ML Sensor Management System</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="major-awards">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Most%20Important/2025-05-13%20-%20Summer%20Fellowship%20-%20ANDC%20ELITE%202024%20Building%20an%208-Bit%20Computer%20Using%20ICs.jpg" data-pdf="" data-title="ANDC ELITE 2024 Building an 8-Bit Computer Using ICs">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Most%20Important/2025-05-13%20-%20Summer%20Fellowship%20-%20ANDC%20ELITE%202024%20Building%20an%208-Bit%20Computer%20Using%20ICs.jpg" class="certificate-img card-img-top" alt="ANDC ELITE 2024 Building an 8-Bit Computer Using ICs" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>May 2025</span>
+                            
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Summer Fellowship</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">ANDC ELITE 2024 Building an 8-Bit Computer Using ICs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="major-awards">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Most%20Important/2025-07-31%20-%20Summer%20Fellowship%20-%20ANDC%20ELITE%202025%20Animatronic%20Eye%20System%20with%20Interaction.jpg" data-pdf="Certificate/Most%20Important/2025-07-31%20-%20Summer%20Fellowship%20-%20ANDC%20ELITE%202025%20Animatronic%20Eye%20System%20with%20Interaction.pdf" data-title="ANDC ELITE 2025 Animatronic Eye System with Interaction">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Most%20Important/2025-07-31%20-%20Summer%20Fellowship%20-%20ANDC%20ELITE%202025%20Animatronic%20Eye%20System%20with%20Interaction.jpg" class="certificate-img card-img-top" alt="ANDC ELITE 2025 Animatronic Eye System with Interaction" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Jul 2025</span>
+                            <a href="Certificate/Most%20Important/2025-07-31%20-%20Summer%20Fellowship%20-%20ANDC%20ELITE%202025%20Animatronic%20Eye%20System%20with%20Interaction.pdf" target="_blank" class="btn btn-sm btn-danger position-absolute bottom-0 end-0 m-2 cert-pdf-link shadow-sm" title="Open PDF Document" onclick="event.stopPropagation();"><i class="fas fa-file-pdf me-1"></i>PDF</a>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Summer Fellowship</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">ANDC ELITE 2025 Animatronic Eye System with Interaction</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="major-awards">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Most%20Important/2025-08-12%20-%20Internship%20Training%20-%20SSPL%20DRDO%20ML%20Based%20Dashboard%20for%20Intruder%20Detection.jpg" data-pdf="" data-title="SSPL DRDO ML Based Dashboard for Intruder Detection">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Most%20Important/2025-08-12%20-%20Internship%20Training%20-%20SSPL%20DRDO%20ML%20Based%20Dashboard%20for%20Intruder%20Detection.jpg" class="certificate-img card-img-top" alt="SSPL DRDO ML Based Dashboard for Intruder Detection" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Aug 2025</span>
+                            
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Internship Training</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">SSPL DRDO ML Based Dashboard for Intruder Detection</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="major-awards">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Most%20Important/2026-02-06%20-%20Distinguished%20Oral%20Presentation%20Award%20-%20ANDC%20Mathematical%20Sciences%20Vedic%20Analog%20Perceptron%20Modeling.jpg" data-pdf="" data-title="ANDC Mathematical Sciences Vedic Analog Perceptron Modeling">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Most%20Important/2026-02-06%20-%20Distinguished%20Oral%20Presentation%20Award%20-%20ANDC%20Mathematical%20Sciences%20Vedic%20Analog%20Perceptron%20Modeling.jpg" class="certificate-img card-img-top" alt="ANDC Mathematical Sciences Vedic Analog Perceptron Modeling" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Feb 2026</span>
+                            
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Distinguished Oral Presentation Award</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">ANDC Mathematical Sciences Vedic Analog Perceptron Modeling</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="major-awards">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Most%20Important/2026-07-31%20-%20Summer%20Fellowship%20-%20ANDC%20ELITE%202026%20Edge%20AI%20for%20Ultra-Low-Power%20Analog%20Applications.jpg" data-pdf="Certificate/Most%20Important/2026-07-31%20-%20Summer%20Fellowship%20-%20ANDC%20ELITE%202026%20Edge%20AI%20for%20Ultra-Low-Power%20Analog%20Applications.pdf" data-title="ANDC ELITE 2026 Edge AI for Ultra-Low-Power Analog Applications">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Most%20Important/2026-07-31%20-%20Summer%20Fellowship%20-%20ANDC%20ELITE%202026%20Edge%20AI%20for%20Ultra-Low-Power%20Analog%20Applications.jpg" class="certificate-img card-img-top" alt="ANDC ELITE 2026 Edge AI for Ultra-Low-Power Analog Applications" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Jul 2026</span>
+                            <a href="Certificate/Most%20Important/2026-07-31%20-%20Summer%20Fellowship%20-%20ANDC%20ELITE%202026%20Edge%20AI%20for%20Ultra-Low-Power%20Analog%20Applications.pdf" target="_blank" class="btn btn-sm btn-danger position-absolute bottom-0 end-0 m-2 cert-pdf-link shadow-sm" title="Open PDF Document" onclick="event.stopPropagation();"><i class="fas fa-file-pdf me-1"></i>PDF</a>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Summer Fellowship</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">ANDC ELITE 2026 Edge AI for Ultra-Low-Power Analog Applications</h5>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Workshops & Training -->
-        <section class="mb-5">
-            <h3 class="mb-4 border-bottom pb-2"><i class="fas fa-tools text-info me-2"></i>Workshops & Training</h3>
+        <!-- IIT Madras Certifications -->
+        <section class="mb-5 cert-section" data-category="iitm">
+            <h3 class="mb-4 border-bottom pb-2"><i class="fas fa-graduation-cap text-primary me-2"></i>IIT Madras Certifications <span class="badge bg-secondary fs-6 align-middle ms-2">2</span></h3>
             <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="certificate-card card h-100 shadow-sm" data-bs-toggle="modal"
-                        data-bs-target="#certModal" data-img="Certificate/20240909_130953.jpg"
-                        data-title="CSIR-CSIO Workshop">
-                        <div class="position-relative">
-                            <img src="Certificate/20240909_130953.jpg" class="certificate-img card-img-top"
-                                alt="CSIR Workshop">
-                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Sep 2024</span>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="iitm">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/IITM/2024-05-15%20-%20Foundation%20Completion%20-%20IIT%20Madras%20Programming%20and%20Data%20Science.jpg" data-pdf="Certificate/IITM/2024-05-15%20-%20Foundation%20Completion%20-%20IIT%20Madras%20Programming%20and%20Data%20Science.pdf" data-title="IIT Madras Programming and Data Science">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/IITM/2024-05-15%20-%20Foundation%20Completion%20-%20IIT%20Madras%20Programming%20and%20Data%20Science.jpg" class="certificate-img card-img-top" alt="IIT Madras Programming and Data Science" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>May 2024</span>
+                            <a href="Certificate/IITM/2024-05-15%20-%20Foundation%20Completion%20-%20IIT%20Madras%20Programming%20and%20Data%20Science.pdf" target="_blank" class="btn btn-sm btn-danger position-absolute bottom-0 end-0 m-2 cert-pdf-link shadow-sm" title="Open PDF Document" onclick="event.stopPropagation();"><i class="fas fa-file-pdf me-1"></i>PDF</a>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">CSIR-CSIO Workshop</h5>
-                            <p class="card-text text-muted small">Industrial Automation Techniques</p>
+                            <span class="badge bg-light text-primary border mb-2">Foundation Completion</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">IIT Madras Programming and Data Science</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="iitm">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/IITM/2026-09-20%20-%20Diploma%20Completion%20-%20IIT%20Madras%20Diploma%20in%20Data%20Science.jpg" data-pdf="Certificate/IITM/2026-09-20%20-%20Diploma%20Completion%20-%20IIT%20Madras%20Diploma%20in%20Data%20Science.pdf" data-title="IIT Madras Diploma in Data Science">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/IITM/2026-09-20%20-%20Diploma%20Completion%20-%20IIT%20Madras%20Diploma%20in%20Data%20Science.jpg" class="certificate-img card-img-top" alt="IIT Madras Diploma in Data Science" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Sep 2026</span>
+                            <a href="Certificate/IITM/2026-09-20%20-%20Diploma%20Completion%20-%20IIT%20Madras%20Diploma%20in%20Data%20Science.pdf" target="_blank" class="btn btn-sm btn-danger position-absolute bottom-0 end-0 m-2 cert-pdf-link shadow-sm" title="Open PDF Document" onclick="event.stopPropagation();"><i class="fas fa-file-pdf me-1"></i>PDF</a>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Diploma Completion</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">IIT Madras Diploma in Data Science</h5>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
 
+        <!-- Electronics & Technical Certifications -->
+        <section class="mb-5 cert-section" data-category="electronics">
+            <h3 class="mb-4 border-bottom pb-2"><i class="fas fa-microchip text-info me-2"></i>Electronics & Technical Certifications <span class="badge bg-secondary fs-6 align-middle ms-2">6</span></h3>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 cert-item" data-category="electronics">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Electronics%20fields/2022-05-01%20-%20Merit%20Scholarship%20-%20Zaheen%20Mateen%20Memorial%20Scholarship%20Class%20X.jpg" data-pdf="" data-title="Zaheen Mateen Memorial Scholarship Class X">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Electronics%20fields/2022-05-01%20-%20Merit%20Scholarship%20-%20Zaheen%20Mateen%20Memorial%20Scholarship%20Class%20X.jpg" class="certificate-img card-img-top" alt="Zaheen Mateen Memorial Scholarship Class X" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>May 2022</span>
+                            
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Merit Scholarship</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">Zaheen Mateen Memorial Scholarship Class X</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="electronics">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Electronics%20fields/2023-10-14%20-%20Training%20Participation%20-%20DDUC%20IoTronics%20Training%20Program%20on%20IoT.jpg" data-pdf="" data-title="DDUC IoTronics Training Program on IoT">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Electronics%20fields/2023-10-14%20-%20Training%20Participation%20-%20DDUC%20IoTronics%20Training%20Program%20on%20IoT.jpg" class="certificate-img card-img-top" alt="DDUC IoTronics Training Program on IoT" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Oct 2023</span>
+                            
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Training Participation</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">DDUC IoTronics Training Program on IoT</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="electronics">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Electronics%20fields/2023-10-16%20-%20Competition%20Qualification%20-%20DDUC%20IoTronics%20Training%20Program%20on%20IoT%20and%20Competition.jpg" data-pdf="" data-title="DDUC IoTronics Training Program on IoT and Competition">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Electronics%20fields/2023-10-16%20-%20Competition%20Qualification%20-%20DDUC%20IoTronics%20Training%20Program%20on%20IoT%20and%20Competition.jpg" class="certificate-img card-img-top" alt="DDUC IoTronics Training Program on IoT and Competition" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Oct 2023</span>
+                            
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Competition Qualification</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">DDUC IoTronics Training Program on IoT and Competition</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="electronics">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Electronics%20fields/2024-09-06%20-%20Workshop%20Training%20-%20CSIR-CSIO%20Industrial%20Automation%20Techniques.jpg" data-pdf="" data-title="CSIR-CSIO Industrial Automation Techniques">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Electronics%20fields/2024-09-06%20-%20Workshop%20Training%20-%20CSIR-CSIO%20Industrial%20Automation%20Techniques.jpg" class="certificate-img card-img-top" alt="CSIR-CSIO Industrial Automation Techniques" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Sep 2024</span>
+                            
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Workshop Training</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">CSIR-CSIO Industrial Automation Techniques</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="electronics">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Electronics%20fields/2025-02-01%20-%20Participation%20-%20ISCB%202025%20International%20Symposium%20on%20Ciliate%20Biology.jpg" data-pdf="" data-title="ISCB 2025 International Symposium on Ciliate Biology">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Electronics%20fields/2025-02-01%20-%20Participation%20-%20ISCB%202025%20International%20Symposium%20on%20Ciliate%20Biology.jpg" class="certificate-img card-img-top" alt="ISCB 2025 International Symposium on Ciliate Biology" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Feb 2025</span>
+                            
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Participation</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">ISCB 2025 International Symposium on Ciliate Biology</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="electronics">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Electronics%20fields/2025-02-01%20-%20Poster%20Presentation%20-%20ISCB%202025%20International%20Symposium%20on%20Ciliate%20Biology%20%28ML%20Environmental%20Contamination%29.jpg" data-pdf="" data-title="ISCB 2025 International Symposium on Ciliate Biology (ML Environmental Contamination)">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Electronics%20fields/2025-02-01%20-%20Poster%20Presentation%20-%20ISCB%202025%20International%20Symposium%20on%20Ciliate%20Biology%20%28ML%20Environmental%20Contamination%29.jpg" class="certificate-img card-img-top" alt="ISCB 2025 International Symposium on Ciliate Biology (ML Environmental Contamination)" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Feb 2025</span>
+                            
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Poster Presentation</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">ISCB 2025 International Symposium on Ciliate Biology (ML Environmental Contamination)</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership & Event Management -->
+        <section class="mb-5 cert-section" data-category="management">
+            <h3 class="mb-4 border-bottom pb-2"><i class="fas fa-users-cog text-success me-2"></i>Leadership & Event Management <span class="badge bg-secondary fs-6 align-middle ms-2">5</span></h3>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 cert-item" data-category="management">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/management/2025-11-13%20-%20Organizing%20Committee%20-%20ANDC%20AI%20and%20IoT%20Workshop.jpg" data-pdf="Certificate/management/2025-11-13%20-%20Organizing%20Committee%20-%20ANDC%20AI%20and%20IoT%20Workshop.pdf" data-title="ANDC AI and IoT Workshop">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/management/2025-11-13%20-%20Organizing%20Committee%20-%20ANDC%20AI%20and%20IoT%20Workshop.jpg" class="certificate-img card-img-top" alt="ANDC AI and IoT Workshop" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Nov 2025</span>
+                            <a href="Certificate/management/2025-11-13%20-%20Organizing%20Committee%20-%20ANDC%20AI%20and%20IoT%20Workshop.pdf" target="_blank" class="btn btn-sm btn-danger position-absolute bottom-0 end-0 m-2 cert-pdf-link shadow-sm" title="Open PDF Document" onclick="event.stopPropagation();"><i class="fas fa-file-pdf me-1"></i>PDF</a>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Organizing Committee</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">ANDC AI and IoT Workshop</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="management">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/management/2025-11-13%20-%20Resource%20Person%20-%20ANDC%20AI%20and%20IoT%20Workshop.jpg" data-pdf="Certificate/management/2025-11-13%20-%20Resource%20Person%20-%20ANDC%20AI%20and%20IoT%20Workshop.pdf" data-title="ANDC AI and IoT Workshop">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/management/2025-11-13%20-%20Resource%20Person%20-%20ANDC%20AI%20and%20IoT%20Workshop.jpg" class="certificate-img card-img-top" alt="ANDC AI and IoT Workshop" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Nov 2025</span>
+                            <a href="Certificate/management/2025-11-13%20-%20Resource%20Person%20-%20ANDC%20AI%20and%20IoT%20Workshop.pdf" target="_blank" class="btn btn-sm btn-danger position-absolute bottom-0 end-0 m-2 cert-pdf-link shadow-sm" title="Open PDF Document" onclick="event.stopPropagation();"><i class="fas fa-file-pdf me-1"></i>PDF</a>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Resource Person</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">ANDC AI and IoT Workshop</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="management">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/management/2025-11-15%20-%20Mentorship%20-%20ANDC%20AI%20and%20IoT%20Hackathon.jpg" data-pdf="Certificate/management/2025-11-15%20-%20Mentorship%20-%20ANDC%20AI%20and%20IoT%20Hackathon.pdf" data-title="ANDC AI and IoT Hackathon">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/management/2025-11-15%20-%20Mentorship%20-%20ANDC%20AI%20and%20IoT%20Hackathon.jpg" class="certificate-img card-img-top" alt="ANDC AI and IoT Hackathon" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Nov 2025</span>
+                            <a href="Certificate/management/2025-11-15%20-%20Mentorship%20-%20ANDC%20AI%20and%20IoT%20Hackathon.pdf" target="_blank" class="btn btn-sm btn-danger position-absolute bottom-0 end-0 m-2 cert-pdf-link shadow-sm" title="Open PDF Document" onclick="event.stopPropagation();"><i class="fas fa-file-pdf me-1"></i>PDF</a>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Mentorship</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">ANDC AI and IoT Hackathon</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="management">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/management/2025-11-15%20-%20Organizing%20Committee%20-%20ANDC%20AI%20and%20IoT%20Hackathon.jpg" data-pdf="Certificate/management/2025-11-15%20-%20Organizing%20Committee%20-%20ANDC%20AI%20and%20IoT%20Hackathon.pdf" data-title="ANDC AI and IoT Hackathon">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/management/2025-11-15%20-%20Organizing%20Committee%20-%20ANDC%20AI%20and%20IoT%20Hackathon.jpg" class="certificate-img card-img-top" alt="ANDC AI and IoT Hackathon" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Nov 2025</span>
+                            <a href="Certificate/management/2025-11-15%20-%20Organizing%20Committee%20-%20ANDC%20AI%20and%20IoT%20Hackathon.pdf" target="_blank" class="btn btn-sm btn-danger position-absolute bottom-0 end-0 m-2 cert-pdf-link shadow-sm" title="Open PDF Document" onclick="event.stopPropagation();"><i class="fas fa-file-pdf me-1"></i>PDF</a>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Organizing Committee</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">ANDC AI and IoT Hackathon</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="management">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/management/2026-09-23%20-%20Student%20Coordinator%20-%20ANDC%20Roboverse%20Robotics%20Workshop.jpg" data-pdf="Certificate/management/2026-09-23%20-%20Student%20Coordinator%20-%20ANDC%20Roboverse%20Robotics%20Workshop.pdf" data-title="ANDC Roboverse Robotics Workshop">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/management/2026-09-23%20-%20Student%20Coordinator%20-%20ANDC%20Roboverse%20Robotics%20Workshop.jpg" class="certificate-img card-img-top" alt="ANDC Roboverse Robotics Workshop" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Sep 2026</span>
+                            <a href="Certificate/management/2026-09-23%20-%20Student%20Coordinator%20-%20ANDC%20Roboverse%20Robotics%20Workshop.pdf" target="_blank" class="btn btn-sm btn-danger position-absolute bottom-0 end-0 m-2 cert-pdf-link shadow-sm" title="Open PDF Document" onclick="event.stopPropagation();"><i class="fas fa-file-pdf me-1"></i>PDF</a>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Student Coordinator</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">ANDC Roboverse Robotics Workshop</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conferences, Symposia & Workshops -->
+        <section class="mb-5 cert-section" data-category="participation">
+            <h3 class="mb-4 border-bottom pb-2"><i class="fas fa-certificate text-danger me-2"></i>Conferences, Symposia & Workshops <span class="badge bg-secondary fs-6 align-middle ms-2">8</span></h3>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 cert-item" data-category="participation">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Participation%20certificate/2023-09-23%20-%20Workshop%20Participation%20-%20SPIE%20ANDC%203D%20Printing%20Technology%20Workshop.jpg" data-pdf="Certificate/Participation%20certificate/2023-09-23%20-%20Workshop%20Participation%20-%20SPIE%20ANDC%203D%20Printing%20Technology%20Workshop.pdf" data-title="SPIE ANDC 3D Printing Technology Workshop">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Participation%20certificate/2023-09-23%20-%20Workshop%20Participation%20-%20SPIE%20ANDC%203D%20Printing%20Technology%20Workshop.jpg" class="certificate-img card-img-top" alt="SPIE ANDC 3D Printing Technology Workshop" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Sep 2023</span>
+                            <a href="Certificate/Participation%20certificate/2023-09-23%20-%20Workshop%20Participation%20-%20SPIE%20ANDC%203D%20Printing%20Technology%20Workshop.pdf" target="_blank" class="btn btn-sm btn-danger position-absolute bottom-0 end-0 m-2 cert-pdf-link shadow-sm" title="Open PDF Document" onclick="event.stopPropagation();"><i class="fas fa-file-pdf me-1"></i>PDF</a>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Workshop Participation</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">SPIE ANDC 3D Printing Technology Workshop</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="participation">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Participation%20certificate/2024-03-01%20-%20Workshop%20Participation%20-%20SPIE%20ANDC%20Internet%20of%20Things%20Workshop.jpg" data-pdf="Certificate/Participation%20certificate/2024-03-01%20-%20Workshop%20Participation%20-%20SPIE%20ANDC%20Internet%20of%20Things%20Workshop.pdf" data-title="SPIE ANDC Internet of Things Workshop">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Participation%20certificate/2024-03-01%20-%20Workshop%20Participation%20-%20SPIE%20ANDC%20Internet%20of%20Things%20Workshop.jpg" class="certificate-img card-img-top" alt="SPIE ANDC Internet of Things Workshop" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Mar 2024</span>
+                            <a href="Certificate/Participation%20certificate/2024-03-01%20-%20Workshop%20Participation%20-%20SPIE%20ANDC%20Internet%20of%20Things%20Workshop.pdf" target="_blank" class="btn btn-sm btn-danger position-absolute bottom-0 end-0 m-2 cert-pdf-link shadow-sm" title="Open PDF Document" onclick="event.stopPropagation();"><i class="fas fa-file-pdf me-1"></i>PDF</a>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Workshop Participation</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">SPIE ANDC Internet of Things Workshop</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="participation">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Participation%20certificate/2024-04-05%20-%20Oral%20Presentation%20-%20INSCR%20ISCB%202024%20Industrial%20Impact%20on%20Bhilwara%20Soil.jpg" data-pdf="Certificate/Participation%20certificate/2024-04-05%20-%20Oral%20Presentation%20-%20INSCR%20ISCB%202024%20Industrial%20Impact%20on%20Bhilwara%20Soil.pdf" data-title="INSCR ISCB 2024 Industrial Impact on Bhilwara Soil">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Participation%20certificate/2024-04-05%20-%20Oral%20Presentation%20-%20INSCR%20ISCB%202024%20Industrial%20Impact%20on%20Bhilwara%20Soil.jpg" class="certificate-img card-img-top" alt="INSCR ISCB 2024 Industrial Impact on Bhilwara Soil" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Apr 2024</span>
+                            <a href="Certificate/Participation%20certificate/2024-04-05%20-%20Oral%20Presentation%20-%20INSCR%20ISCB%202024%20Industrial%20Impact%20on%20Bhilwara%20Soil.pdf" target="_blank" class="btn btn-sm btn-danger position-absolute bottom-0 end-0 m-2 cert-pdf-link shadow-sm" title="Open PDF Document" onclick="event.stopPropagation();"><i class="fas fa-file-pdf me-1"></i>PDF</a>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Oral Presentation</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">INSCR ISCB 2024 Industrial Impact on Bhilwara Soil</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="participation">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Participation%20certificate/2025-10-07%20-%20Live%20Demonstration%20-%20ANDC%20Shodh%20Udaan%20%288-Bit%20Computers%20Experiential%20Education%29.jpg" data-pdf="Certificate/Participation%20certificate/2025-10-07%20-%20Live%20Demonstration%20-%20ANDC%20Shodh%20Udaan%20%288-Bit%20Computers%20Experiential%20Education%29.pdf" data-title="ANDC Shodh Udaan (8-Bit Computers Experiential Education)">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Participation%20certificate/2025-10-07%20-%20Live%20Demonstration%20-%20ANDC%20Shodh%20Udaan%20%288-Bit%20Computers%20Experiential%20Education%29.jpg" class="certificate-img card-img-top" alt="ANDC Shodh Udaan (8-Bit Computers Experiential Education)" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Oct 2025</span>
+                            <a href="Certificate/Participation%20certificate/2025-10-07%20-%20Live%20Demonstration%20-%20ANDC%20Shodh%20Udaan%20%288-Bit%20Computers%20Experiential%20Education%29.pdf" target="_blank" class="btn btn-sm btn-danger position-absolute bottom-0 end-0 m-2 cert-pdf-link shadow-sm" title="Open PDF Document" onclick="event.stopPropagation();"><i class="fas fa-file-pdf me-1"></i>PDF</a>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Live Demonstration</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">ANDC Shodh Udaan (8-Bit Computers Experiential Education)</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="participation">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Participation%20certificate/2025-10-07%20-%20Live%20Demonstration%20-%20ANDC%20Shodh%20Udaan%20%28Animatronic%20Eye%20Interaction%20System%29.jpg" data-pdf="Certificate/Participation%20certificate/2025-10-07%20-%20Live%20Demonstration%20-%20ANDC%20Shodh%20Udaan%20%28Animatronic%20Eye%20Interaction%20System%29.pdf" data-title="ANDC Shodh Udaan (Animatronic Eye Interaction System)">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Participation%20certificate/2025-10-07%20-%20Live%20Demonstration%20-%20ANDC%20Shodh%20Udaan%20%28Animatronic%20Eye%20Interaction%20System%29.jpg" class="certificate-img card-img-top" alt="ANDC Shodh Udaan (Animatronic Eye Interaction System)" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Oct 2025</span>
+                            <a href="Certificate/Participation%20certificate/2025-10-07%20-%20Live%20Demonstration%20-%20ANDC%20Shodh%20Udaan%20%28Animatronic%20Eye%20Interaction%20System%29.pdf" target="_blank" class="btn btn-sm btn-danger position-absolute bottom-0 end-0 m-2 cert-pdf-link shadow-sm" title="Open PDF Document" onclick="event.stopPropagation();"><i class="fas fa-file-pdf me-1"></i>PDF</a>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Live Demonstration</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">ANDC Shodh Udaan (Animatronic Eye Interaction System)</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="participation">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Participation%20certificate/2025-10-07%20-%20Prototype%20Presentation%20-%20ANDC%20Shodh%20Udaan%20%28Sensor%20Bank%20Intelligent%20Sensor%20Insights%29.jpg" data-pdf="Certificate/Participation%20certificate/2025-10-07%20-%20Prototype%20Presentation%20-%20ANDC%20Shodh%20Udaan%20%28Sensor%20Bank%20Intelligent%20Sensor%20Insights%29.pdf" data-title="ANDC Shodh Udaan (Sensor Bank Intelligent Sensor Insights)">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Participation%20certificate/2025-10-07%20-%20Prototype%20Presentation%20-%20ANDC%20Shodh%20Udaan%20%28Sensor%20Bank%20Intelligent%20Sensor%20Insights%29.jpg" class="certificate-img card-img-top" alt="ANDC Shodh Udaan (Sensor Bank Intelligent Sensor Insights)" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Oct 2025</span>
+                            <a href="Certificate/Participation%20certificate/2025-10-07%20-%20Prototype%20Presentation%20-%20ANDC%20Shodh%20Udaan%20%28Sensor%20Bank%20Intelligent%20Sensor%20Insights%29.pdf" target="_blank" class="btn btn-sm btn-danger position-absolute bottom-0 end-0 m-2 cert-pdf-link shadow-sm" title="Open PDF Document" onclick="event.stopPropagation();"><i class="fas fa-file-pdf me-1"></i>PDF</a>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Prototype Presentation</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">ANDC Shodh Udaan (Sensor Bank Intelligent Sensor Insights)</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="participation">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Participation%20certificate/2025-11-11%20-%20Digital%20Poster%20Presentation%20-%20Gargi%20College%20Green%20Chemistry%20Data%20Science%20Pipeline.jpg" data-pdf="Certificate/Participation%20certificate/2025-11-11%20-%20Digital%20Poster%20Presentation%20-%20Gargi%20College%20Green%20Chemistry%20Data%20Science%20Pipeline.pdf" data-title="Gargi College Green Chemistry Data Science Pipeline">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Participation%20certificate/2025-11-11%20-%20Digital%20Poster%20Presentation%20-%20Gargi%20College%20Green%20Chemistry%20Data%20Science%20Pipeline.jpg" class="certificate-img card-img-top" alt="Gargi College Green Chemistry Data Science Pipeline" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Nov 2025</span>
+                            <a href="Certificate/Participation%20certificate/2025-11-11%20-%20Digital%20Poster%20Presentation%20-%20Gargi%20College%20Green%20Chemistry%20Data%20Science%20Pipeline.pdf" target="_blank" class="btn btn-sm btn-danger position-absolute bottom-0 end-0 m-2 cert-pdf-link shadow-sm" title="Open PDF Document" onclick="event.stopPropagation();"><i class="fas fa-file-pdf me-1"></i>PDF</a>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Digital Poster Presentation</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">Gargi College Green Chemistry Data Science Pipeline</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 cert-item" data-category="participation">
+                    <div class="certificate-card card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#certModal" data-img="Certificate/Participation%20certificate/2025-12-10%20-%20Poster%20Presentation%20-%20JNU%20TIBS%202025%20Trends%20in%20Biological%20Sciences.jpg" data-pdf="Certificate/Participation%20certificate/2025-12-10%20-%20Poster%20Presentation%20-%20JNU%20TIBS%202025%20Trends%20in%20Biological%20Sciences.pdf" data-title="JNU TIBS 2025 Trends in Biological Sciences">
+                        <div class="position-relative overflow-hidden" style="border-top-left-radius: inherit; border-top-right-radius: inherit;">
+                            <img src="Certificate/Participation%20certificate/2025-12-10%20-%20Poster%20Presentation%20-%20JNU%20TIBS%202025%20Trends%20in%20Biological%20Sciences.jpg" class="certificate-img card-img-top" alt="JNU TIBS 2025 Trends in Biological Sciences" loading="lazy">
+                            <span class="date-badge"><i class="far fa-calendar-alt me-1"></i>Dec 2025</span>
+                            <a href="Certificate/Participation%20certificate/2025-12-10%20-%20Poster%20Presentation%20-%20JNU%20TIBS%202025%20Trends%20in%20Biological%20Sciences.pdf" target="_blank" class="btn btn-sm btn-danger position-absolute bottom-0 end-0 m-2 cert-pdf-link shadow-sm" title="Open PDF Document" onclick="event.stopPropagation();"><i class="fas fa-file-pdf me-1"></i>PDF</a>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-light text-primary border mb-2">Poster Presentation</span>
+                            <h5 class="card-title fs-6 fw-bold mb-1">JNU TIBS 2025 Trends in Biological Sciences</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     <!-- Modal for Certificates -->
     <div class="modal fade" id="certModal" tabindex="-1" aria-labelledby="certModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -307,12 +535,13 @@
                 <div class="modal-body p-0 position-relative text-center">
                     <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
                         data-bs-dismiss="modal" aria-label="Close"
-                        style="z-index: 1056; background-color: white; opacity: 0.8;"></button>
-                    <img src="" id="certModalImg" class="img-fluid rounded shadow-lg" alt="Certificate Image"
-                        style="max-height: 90vh;">
+                        style="z-index: 1056; background-color: white; opacity: 0.9;"></button>
+                    <img src="" id="certModalImg" class="img-fluid rounded shadow-lg bg-white" alt="Certificate Image"
+                        style="max-height: 85vh; border: 4px solid #fff;">
                 </div>
-                <div class="modal-footer justify-content-center border-0 pt-2">
-                    <h5 class="modal-title text-white fw-bold" id="certModalLabel"></h5>
+                <div class="modal-footer justify-content-between border-0 pt-3 px-3">
+                    <h5 class="modal-title text-white fw-bold mb-0" id="certModalLabel"></h5>
+                    <div id="modalPdfBtnContainer"></div>
                 </div>
             </div>
         </div>
@@ -320,20 +549,59 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Handle modal image display
-        var certModal = document.getElementById('certModal');
-        certModal.addEventListener('show.bs.modal', function (event) {
-            var button = event.relatedTarget;
-            var imgSrc = button.getAttribute('data-img');
-            var title = button.getAttribute('data-title');
+        // Certificate Filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const certSections = document.querySelectorAll('.cert-section');
+        const certItems = document.querySelectorAll('.cert-item');
 
-            var modalImg = certModal.querySelector('#certModalImg');
-            var modalTitle = certModal.querySelector('.modal-title');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('btn-primary', 'active');
+                    b.classList.add('btn-outline-primary');
+                });
+                btn.classList.remove('btn-outline-primary');
+                btn.classList.add('btn-primary', 'active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                if (filter === 'all') {
+                    certSections.forEach(sec => sec.style.display = 'block');
+                    certItems.forEach(item => item.style.display = 'block');
+                } else {
+                    certSections.forEach(sec => {
+                        const secCat = sec.getAttribute('data-category');
+                        if (secCat === filter) {
+                            sec.style.display = 'block';
+                        } else {
+                            sec.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        });
+
+        // Handle modal image display & PDF link
+        const certModal = document.getElementById('certModal');
+        certModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const imgSrc = button.getAttribute('data-img');
+            const pdfSrc = button.getAttribute('data-pdf');
+            const title = button.getAttribute('data-title');
+
+            const modalImg = certModal.querySelector('#certModalImg');
+            const modalTitle = certModal.querySelector('.modal-title');
+            const pdfContainer = certModal.querySelector('#modalPdfBtnContainer');
 
             modalImg.src = imgSrc;
             modalTitle.textContent = title;
+
+            if (pdfSrc) {
+                pdfContainer.innerHTML = `<a href="${pdfSrc}" target="_blank" class="btn btn-danger btn-sm"><i class="fas fa-file-pdf me-1"></i>View Official PDF</a>`;
+            } else {
+                pdfContainer.innerHTML = '';
+            }
         });
     </script>
 </body>
-
 </html>
